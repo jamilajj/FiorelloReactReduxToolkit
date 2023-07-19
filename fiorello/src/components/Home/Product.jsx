@@ -1,14 +1,17 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 
 const Product = ({ product }) => {
+    const navigate= useNavigate();
+
     return (
         //  <div className='w-[300px] h-[350px] p-3 mb-10 mx-5 border rounded-md relative cursor-pointer'>
         //     <img src={product.image} alt={product.name} className='w-full h-40 object-cover rounded-md' />
         //     <div className='text-center px-3 mt-3 text-l font-bold'>{product.title}</div>
         //     <div className='text-center rounded-md top-0 right-0  p-2 m-1 cursor-pointer text-gray-400'>{product.price}</div>
         //  </div>
-        <div className="bg-white">
+        <div onClick={()=>navigate(`products/${product?.id}`)} className="bg-white">
             <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
 
 
