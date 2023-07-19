@@ -14,7 +14,7 @@ const Home = () => {
                 <Category setCategory={setCategory} />
                 <Sorting setSort={setSort} />
             </div>
-            <Products category={category} />
+            <Products category={category} sort={sort} />
         </div>
     )
 }
