@@ -1,6 +1,6 @@
 import React from 'react'
 
-const navbarMenu = () => {
+const NavbarMenu = () => {
     return (
         <div className='flex items-center'>
             <ul className='flex items-center gap-10'>
@@ -15,4 +15,4 @@ const navbarMenu = () => {
     )
 }
 
-export default navbarMenu
+export default NavbarMenu
