@@ -4,6 +4,7 @@
 @tailwind utilities;
 body{
     font-family: 'Nunito', sans-serif;
+    background-color: aqua;
 }
 .paginate{
     display: flex;

@@ -12,7 +12,7 @@ const Category = ({setCategory}) => {
     }, [dispatch])
 
     return (
-        <div className='bg-gray-100 flex items-center justify-start gap-5 on-click'>
+        <div  className=' bg-gray-100 flex items-center justify-start gap-5 '>
       
             {
                 categories?.map((category, i) => (
