@@ -5,13 +5,19 @@ import Sorting from '../components/Home/Sorting';
 import Products from '../components/Home/Products';
 import VideoComp from '../components/video/VideoComp';
 import VideoDescription from '../components/video/VideoDescription';
+import HeaderComp from '../components/exsperts/HeaderComp';
+import Experts from '../components/exsperts/Experts';
+import Testimonial from '../components/testimonial/Testimonial';
 
 const Home = () => {
     const [sort,setSort]=useState("");
     const [category,setCategory]=useState("");
     return (
         <div>
-            <SliderComp />
+            <div className='mw-1000px'>
+            <SliderComp  />
+            </div>
+          
             <div className='flex items-center justify-between '>
                 <Category setCategory={setCategory} />
                 <Sorting setSort={setSort} />
@@ -21,6 +27,13 @@ const Home = () => {
             <VideoComp />
             <VideoDescription/>
             </div>
+            <div className=''>
+            <HeaderComp/>
+            <Experts/>
+            </div>
+            <Testimonial/>
+           
+
            
         </div>
     )
