@@ -3,7 +3,7 @@ import categorySlice from './CategorySlice'
 import ProductSlice from './ProductSlice'
 import CardSlice from './CardSlice'
 import ExpertSlice from './ExpertSlice'
-import { authSlice } from './AuthSlice'
+import  authSlice  from './AuthSlice'
 import TestimonialSlice from './TestimonialSlice'
 
 

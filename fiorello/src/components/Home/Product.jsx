@@ -1,18 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { addToCard } from '../../redux/CardSlice';
+import { useDispatch } from 'react-redux';
 
 
 const Product = ({ product }) => {
-    const navigate= useNavigate();
-
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
+    const addBasket = () => {
+        dispatch(addToCard({ id: product?.id, title: product?.title, image: product?.image, price: product?.price, quantity: 1 }))
+    }
+    
     return (
-         <div className='w-[300px] h-[350px] p-3 mb-10 mx-5 border rounded-md relative cursor-pointer bg-white '>
-            <img src={product.image} alt={product.name} className='w-full h-40 object-cover  rounded-md' />
-            <div className='text-center px-3 mt-3 text-l font-bold'>{product.title}</div>
-            <div className='text-center rounded-md top-0 right-0  p-2 m-1 cursor-pointer text-gray-400'>{product.price}</div>
+        <div className='w-[300px] h-[350px] p-3 mb-10 mx-5 border rounded-md relative cursor-pointer bg-white '>
+            <div onClick={() => navigate(`products/${product?.id}`)} >
+                <img src={product.image} alt={product.name} className='w-full h-40 object-cover  rounded-md' />
+                <div className='text-center px-3 mt-3 text-l font-bold'>{product.title}</div>
+                <div className='text-center rounded-md top-0 right-0  p-2 m-1 cursor-pointer text-gray-400'>{product.price}</div>
+            </div>
 
-            <div className='text-center rounded-md top-0 right-0  p-2 m-1 cursor-pointer text-black text-xl  hover:bg-red-400  rounded-md '>Add to Card</div>
-         </div>
+
+            <div onClick={addBasket} className='my-4 border w-[200px] text-2xl rounded-md bg-gray-200 cursor-pointer h-16 flex items-center justify-center'>Add to Card</div>
+        </div>
         // <div onClick={()=>navigate(`products/${product?.id}`)} className="bg-white">
         //     <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
 
@@ -43,7 +52,7 @@ const Product = ({ product }) => {
         //     </div>
         // </div>
     )
-    
+
 }
 
 export default Product
