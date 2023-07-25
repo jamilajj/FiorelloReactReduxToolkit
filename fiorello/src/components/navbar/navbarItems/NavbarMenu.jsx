@@ -10,7 +10,7 @@ const NavbarMenu = () => {
             <li onClick={()=>navigate(`About`)}>ABOUT</li>
             <li>BLOG</li>
             <li>CONTACT US</li>
-            <li>FAQS</li>
+            <li onClick={()=>navigate(`Shop`)}>SHOP</li>
             <li onClick={()=>navigate("Login")}>LOG IN</li>
         </ul>
         </div>

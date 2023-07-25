@@ -24,8 +24,13 @@ const Home = () => {
             <PageContainer>
 
                 <div className='flex items-center justify-between '>
-                    <Category setCategory={setCategory} />
+                
+                    <Category  setCategory={setCategory} />
+                 
+                    <div>
                     <Sorting setSort={setSort} />
+                    </div>
+                 
                 </div>
                 <Products category={category} sort={sort} />
                 <div className='flex items-center gap-12'>

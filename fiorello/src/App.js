@@ -12,37 +12,37 @@ import Footer from './components/footer/Footer';
 import Login from './pages/Login';
 import React from "react";
 import About from './pages/About';
+import Shop from './pages/Shop';
 
 
 function App() {
-  const user= useSelector((state)=>state.user.user);
-  const {authUser} = user;
+  const user = useSelector((state) => state.user.user);
+  const { authUser } = user;
   console.log("user", user);
-  console.log("authuser",authUser)
-    return (
-    
+  console.log("authuser", authUser)
+  return (
+
     <Router>
-           <Navbar />
-        
-       <Routes>
-  
-     
-    
-   
-   
+      <Navbar />
+
+      <Routes>
+
+
+
         {/* <Route path="/" element={authUser ?<Home></Home>:<Login></Login>} ></Route> */}
         <Route path="/Login" element={<Login />} />
         <Route path="products/:id" element={<Detail />} />
         <Route path="/Card" element={<Card />} />
         <Route path="/" element={<Home />} />
 
-     
-   
-      <Route path="/About" element={<About />} />
-   
+
+        <Route path="/About" element={<About />} />
+
+
+        <Route path="/Shop" element={<Shop/>} />
       </Routes>
-   
-      <Footer/>
+
+      <Footer />
     </Router>
 
   );

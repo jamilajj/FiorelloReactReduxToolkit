@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getCategories } from '../../redux/CategorySlice';
 
-const Category = ({setCategory}) => {
+const ShopCategory = ({setCategory}) => {
     const dispatch = useDispatch();
     const { categories } = useSelector(state => state.categories)
     console.log(categories, "category");
@@ -12,11 +12,11 @@ const Category = ({setCategory}) => {
     }, [dispatch])
 
     return (
-        <div className='flex items-center justify-start  gap-5'  >
+        <div   className=' flex flex-col  '  >
       
             {
                 categories?.map((category, i) => (
-                    <div  className=' capitalize cursor-pointer hover:text-red-500   '  onClick={()=>setCategory(category)} key={i} >{category}</div>
+                    <div className='capitalize cursor-pointer hover:text-red-500 my-1.5 text-slate-500'  onClick={()=>setCategory(category)} key={i} >{category}</div>
                 ))
             }
       
@@ -26,4 +26,4 @@ const Category = ({setCategory}) => {
     )
 }
 
-export default Category
+export default ShopCategory
