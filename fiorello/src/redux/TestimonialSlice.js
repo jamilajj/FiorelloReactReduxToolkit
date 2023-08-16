@@ -8,7 +8,7 @@ const initialState = {
     testimonialsStatus: STATUS.IDLE
 }
 export const getTestimonials = createAsyncThunk("getTestimonials", async () => {
-    const response = await fetch('https://fakestoreapi.com/products')
+    const response = await fetch('http://localhost:30469/products')
     const data = await response.json()
     return data
 })

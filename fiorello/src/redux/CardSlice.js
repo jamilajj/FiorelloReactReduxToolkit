@@ -57,13 +57,13 @@ const cardSlice = createSlice({
             state.cards = []
             storeInLocalStorage(state.cards)
         },
-        getcardTotal:(state)=>{
-            state.totalAmount=state.cards.reduce((cardTotal,cardItem)=>{
-                return cardTotal+=cardItem.price*cardItem.quantity
-            },0)
-            state.itemsCount=state.cards.length
+        getcardTotal: (state) => {
+            state.totalAmount = state.cards.reduce((cardTotal, cardItem) => {
+                return cardTotal += cardItem.price * cardItem.quantity
+            }, 0)
+            state.itemsCount = state.cards.length
         }
     }
 })
-export const { addToCard, removeFromCard, clearCard,getcardTotal } = cardSlice.actions
+export const { addToCard, removeFromCard, clearCard, getcardTotal } = cardSlice.actions
 export default cardSlice.reducer
