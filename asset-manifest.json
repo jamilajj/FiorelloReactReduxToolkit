@@ -1,20 +1,15 @@
 {
   "files": {
-    "main.css": "/FiorelloReactReduxToolkit/static/css/main.cb9c1086.css",
-    "main.js": "/FiorelloReactReduxToolkit/static/js/main.6d2aea3b.js",
-    "static/media/h3-slider-background-2.jpg": "/FiorelloReactReduxToolkit/static/media/h3-slider-background-2.30b4d74aa523e7be72d1.jpg",
-    "static/media/h3-slider-background.jpg": "/FiorelloReactReduxToolkit/static/media/h3-slider-background.185a77dddab9f7ffe25e.jpg",
-    "static/media/h3-slider-background-3.jpg": "/FiorelloReactReduxToolkit/static/media/h3-slider-background-3.310a58b755591644ca03.jpg",
-    "static/media/slick.svg": "/FiorelloReactReduxToolkit/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/FiorelloReactReduxToolkit/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/FiorelloReactReduxToolkit/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/FiorelloReactReduxToolkit/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/FiorelloReactReduxToolkit/index.html",
-    "main.cb9c1086.css.map": "/FiorelloReactReduxToolkit/static/css/main.cb9c1086.css.map",
-    "main.6d2aea3b.js.map": "/FiorelloReactReduxToolkit/static/js/main.6d2aea3b.js.map"
+    "main.css": "/FiorelloReactReduxToolkit/adm/static/css/main.6fd6a686.css",
+    "main.js": "/FiorelloReactReduxToolkit/adm/static/js/main.eff1b13e.js",
+    "static/media/404.jpg": "/FiorelloReactReduxToolkit/adm/static/media/404.13bdea0ea8e849c30dc7.jpg",
+    "static/media/400.jpg": "/FiorelloReactReduxToolkit/adm/static/media/400.337dfbb517ecca18b409.jpg",
+    "index.html": "/FiorelloReactReduxToolkit/adm/index.html",
+    "main.6fd6a686.css.map": "/FiorelloReactReduxToolkit/adm/static/css/main.6fd6a686.css.map",
+    "main.eff1b13e.js.map": "/FiorelloReactReduxToolkit/adm/static/js/main.eff1b13e.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb9c1086.css",
-    "static/js/main.6d2aea3b.js"
+    "static/css/main.6fd6a686.css",
+    "static/js/main.eff1b13e.js"
   ]
 }
