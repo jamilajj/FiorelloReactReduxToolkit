@@ -12,7 +12,7 @@ const About = () => {
                 <p className='size-lg absolute'>Where flowers are our inspiration </p>
             </div>
             <PageContainer>
-                <div className='flex justify-between'>
+                <div className='flex justify-between py-16'>
                     <div className='  w-1/2 '>
                         <div className='w-[300-px]  text-start'>
 
