@@ -15,7 +15,7 @@ export const getProducts = createAsyncThunk("getProducts", async () => {
 })
 
 export const getCategoryProducts = createAsyncThunk("getCategoryProduct", async (category) => {
-    const response = await fetch(`https://localhost:7178/api/Catetgory/${category}`)
+    const response = await fetch(`https://localhost:7178/api/${category}`)
     const data = await response.json()
     return data
 })
