@@ -4,7 +4,7 @@ import ProductSlice from './ProductSlice'
 import CardSlice from './CardSlice'
 import ExpertSlice from './ExpertSlice'
 
-import TestimonialSlice from './TestimonialSlice'
+
 
 
 export const store = configureStore({
@@ -13,7 +13,7 @@ export const store = configureStore({
     products: ProductSlice,
     cards: CardSlice,
     experts: ExpertSlice,
-    testimonials: TestimonialSlice,
+
  
   },
  

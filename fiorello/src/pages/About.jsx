@@ -2,7 +2,6 @@ import React from 'react'
 import VideoComp from '../components/video/VideoComp'
 import PageContainer from '../containers/PageContainer'
 import Sign from '../assets/img/h2-sign-img.png'
-import Testimonial from '../components/testimonial/Testimonial'
 import Experts from '../components/exsperts/Experts'
 const About = () => {
     return (
@@ -32,7 +31,7 @@ const About = () => {
                     
                 </div>
                 <Experts/>
-                    <Testimonial />
+
             </PageContainer>
 
         </div>

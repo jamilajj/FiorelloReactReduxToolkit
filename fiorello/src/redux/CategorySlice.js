@@ -5,7 +5,7 @@ const initialState={
 }
 
 export const getCategories = createAsyncThunk('category',async()=>{
-    const response=await fetch('https://localhost:7178')
+    const response=await fetch('https://localhost:7178/')
     const data = response.json();
     return data;
 })

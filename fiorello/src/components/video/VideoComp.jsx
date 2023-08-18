@@ -5,7 +5,7 @@ import ReactPlayer from 'react-player'
 const VideoComp = () => {
   return (
     <div>
-        <ReactPlayer url='https://www.youtube.com/watch?v=aB_MXCkMn1M&t=2276s' />
+        <ReactPlayer url='https://www.youtube.com/watch?v=fyqttjeM8Ps' />
     </div>
   )
 }

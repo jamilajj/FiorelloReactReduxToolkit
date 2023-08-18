@@ -7,7 +7,6 @@ import VideoComp from '../components/video/VideoComp';
 import VideoDescription from '../components/video/VideoDescription';
 import HeaderComp from '../components/exsperts/HeaderComp';
 import Experts from '../components/exsperts/Experts';
-import Testimonial from '../components/testimonial/Testimonial';
 import PageContainer from '../containers/PageContainer';
 
 const Home = () => {
@@ -41,7 +40,7 @@ const Home = () => {
                     <HeaderComp />
                     <Experts />
                 </div>
-                <Testimonial />
+   
 
             </PageContainer>
 

@@ -3,12 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-tailwind/react": "^2.0.7",
+    "@material-tailwind/react": "^2.1.0",
+    "@mdi/js": "^7.2.96",
+    "@mdi/react": "^1.6.1",
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
+    "mdb-react-ui-kit": "^6.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-modal": "^3.16.1",
@@ -18,8 +21,10 @@
     "react-router-dom": "^6.14.2",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
+    "react-slideshow-image": "^4.2.1",
     "slick-carousel": "^1.8.1",
     "sweetalert2": "^11.7.22",
+    "swiper": "^10.2.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

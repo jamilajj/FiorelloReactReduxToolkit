@@ -5,6 +5,9 @@ import LOADING from "../Loading"
 import Product from "./Product"
 import ReactPaginate from 'react-paginate'
 
+
+
+
 function Products({ category, sort }) {
     const dispatch = useDispatch();
     const { products, productsStatus } = useSelector(state => state.products);

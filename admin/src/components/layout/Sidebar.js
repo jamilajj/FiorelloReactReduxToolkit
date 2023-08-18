@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, } from "react-router-dom";
-// import '../../assets/css/sidebar/sidebar.css'
+import '../../assets/css/sidebar/sidebar.css'
 // import '@fortawesome/fontawesome-free/css/all.css';
 
 function Sidebar() {

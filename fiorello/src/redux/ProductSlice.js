@@ -9,20 +9,20 @@ const initialState = {
 }
 
 export const getProducts = createAsyncThunk("getProducts", async () => {
-    const response = await fetch('http://localhost:30469/products')
+    const response = await fetch('https://localhost:7178/api/Product/GetAll')
     const data = await response.json()
     return data
 })
 
 export const getCategoryProducts = createAsyncThunk("getCategoryProduct", async (category) => {
-    const response = await fetch(`http://localhost:30469/products/category/${category}`)
+    const response = await fetch(`https://localhost:7178/api/Catetgory/${category}`)
     const data = await response.json()
     return data
 })
 
 
 export const getProductsDetail = createAsyncThunk("getProductsDetail", async (id) => {
-    const response = await fetch(`http://localhost:30469/products/${id}`)
+    const response = await fetch(`https://localhost:7178/api/Product/${id}`)
     const data = await response.json()
     return data
 })

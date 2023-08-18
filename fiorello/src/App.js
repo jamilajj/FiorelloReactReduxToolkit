@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Detail from './pages/Detail';
 import Card from './pages/Card';
-import { useSelector } from 'react-redux';
 import Footer from './components/footer/Footer';
 
 import React from "react";
@@ -15,6 +14,7 @@ import Shop from './pages/Shop';
 
 import Login from './pages/Login';
 import Register from './pages/Register';
+
 // import RequireAuth from './components/auth/RequireAuth';
 // import Welcome from './components/auth/Welcome';
 
@@ -47,6 +47,8 @@ function App() {
         
         <Route path="Login/Register" element={<Register/>} />
         <Route path="/Login" element={<Login/>} />
+ 
+
         {/* <Route  element={<RequireAuth/>} />
         <Route path="/Welcome" element={<Welcome/>} /> */}
       </Routes>

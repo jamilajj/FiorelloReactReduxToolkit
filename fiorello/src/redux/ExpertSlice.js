@@ -6,7 +6,7 @@ const initialState = {
     expertsStatus: STATUS.IDLE
 }
 export const getExperts = createAsyncThunk("getExperts", async () => {
-    const response = await fetch('http://localhost:30469/users?limit=4')
+    const response = await fetch('https://localhost:7178/users?limit=4')
     const data = await response.json()
     return data
 })

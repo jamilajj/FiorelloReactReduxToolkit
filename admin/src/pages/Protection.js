@@ -7,7 +7,7 @@ function Protection() {
     let currentUser;
     let userRole;
   
-    if (currentToken === null) {
+    if (currentToken !== null) {
       Swal.fire({
         position: "top-end",
         icon: "error",
